@@ -9,38 +9,31 @@
     <script defer src="./update.js"></script>
 </head>
 <body>
-    <header>    
-        <input type="file" name="image" id="image-upload">
-        <img id="image-update">
-        <button class="send_btn">확인</button>
+    <header>
+        <nav class="update">
+            <input type="file" name="image" id="upload" accept="image/*,.pdf">
+            <div class="send-container">
+                <img id="image-update" alt='미리보기'>
+            </div>
+            <input type="text" id="text-update" placeholder="텍스트입력">
+            <button class="send_btn">확인</button>
+        </nav>
+        <nav class="search">
+            <h1 class="title">serch</h1>
+            <input type="text" id="search-text" placeholder="search">
+        </nav>
     </header>
 
     <section>
         <div class="inner">
             <ul class="container">
                 <li class="item">
-                    <img src="./a.jpg" alt="">
-                    <p>123</p>
+                    <img src="./a.jpg">
+                    <p class="name">123</p>
                 </li>
                 <li class="item">
-                    <img src="./b.jpg" alt="">
-                    <p>123</p>
-                </li>
-                <li class="item">
-                    <img src="./" alt="">
-                    <p>123</p>
-                </li>
-                <li class="item">
-                    <img src="./" alt="">
-                    <p>123</p>
-                </li>
-                <li class="item">
-                    <img src="./" alt="">
-                    <p>123</p>
-                </li>
-                <li class="item">
-                    <img src="./" alt="">
-                    <p>123</p>
+                    <img src="./b.jpg">
+                    <p class="name">5</p>
                 </li>
             </ul>
         </div>

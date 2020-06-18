@@ -4,20 +4,55 @@
 li {
     list-style: none;
 }
+
+/* header */
+header {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    
+}
+.send-container {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+#image-update {
+    height: 100px;
+    width: 100px;
+    visibility: hidden;
+}
+#text-update {
+    width: 100px;
+}
+.search {
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.title {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+/* section */
 .inner {
     position: relative;
     width: 100%;
-    background: tomato;
 }
 .container {
     max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(4, 260px);
     column-gap: 1.5em;
     row-gap: 2em;
     margin: 0 auto;
     text-align: center;
-    background: skyblue;
+    padding: 0;
 }
 .item {
     width: 100%;
