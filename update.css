@@ -6,24 +6,22 @@ li {
 }
 
 /* header */
+
 header {
     position: relative;
     width: 100%;
     height: 150px;
-    
+    border: 3px solid black;
+    margin-bottom: 50px;
 }
-.send-container {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-}
-#image-update {
-    height: 100px;
-    width: 100px;
-    visibility: hidden;
-}
-#text-update {
-    width: 100px;
+.popup {
+    position: absolute;
+    top: calc(50% + 5px);
+    left: calc(50% + 150px);
+    font-weight: bold;
+    border-radius: 45%;
+    background: none;
+    border: 3px solid black;
 }
 .search {
     position: absolute;
@@ -43,11 +41,12 @@ header {
 .inner {
     position: relative;
     width: 100%;
+    
 }
 .container {
     max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(4, 260px);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 1.5em;
     row-gap: 2em;
     margin: 0 auto;
